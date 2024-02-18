@@ -77,4 +77,4 @@ def check_link_safety(url):
 
 
 # bot token
-bot.run('MTIwODU0MTM5ODk3NTExOTQwMA.G2tCa0.gwwE6HT9-EPmVWKX-uUyUExA-u-D9DfkDImwSQ')
+bot.run('TOKEN HERE')
