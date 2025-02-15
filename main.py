@@ -12,10 +12,10 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 # API endpoint
-api_url = 'https://api.api-aries.online/v1/checkers/safe-url/?url='
+api_url = 'https://api.api-aries.com/v1/checkers/safe-url/?url='
 # Your token and token type
-token_type = 'token type' #learn more on their docs: https://support.api-aries.online/hc/articles/1/3/4/safe-url-api
-api_key = 'API token' #learn more on their docs: https://support.api-aries.online/hc/articles/1/3/4/safe-url-api
+token_type = 'token type' #learn more on their docs: https://support.api-aries.com/hc/articles/1/3/4/safe-url-api
+api_key = 'API token' #learn more on their docs: https://support.api-aries.com/hc/articles/1/3/4/safe-url-api
 
 
 @bot.event
@@ -44,7 +44,7 @@ async def on_message(message):
                 description=f"The URL `{url}` is not safe. \n\n Reason:\n {safe_message}",
                 color=discord.Color.red()
             )
-            embed.set_footer(text="Made by API-Aries", icon_url="https://support.api-aries.online/favicon/icon-144x144.png")
+            embed.set_footer(text="Made by API-Aries", icon_url="https://support.api-aries.com/favicon/icon-144x144.png")
             warning_message = await message.channel.send(embed=embed)
             await message.delete()
 
